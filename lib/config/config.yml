@@ -1,0 +1,10 @@
+production: &common_settings
+    title: Tic Tac Toe
+    description: "A very hard game of tic tac toe."
+    static: true
+
+test:
+    <<: *common_settings
+
+development:
+    <<: *common_settings

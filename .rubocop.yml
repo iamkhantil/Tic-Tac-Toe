@@ -1,0 +1,24 @@
+LineLength:
+  Enabled: false
+
+MethodLength:
+  Max: 30
+
+ClassLength:
+  Max: 200
+
+Documentation:
+  Enabled: false
+
+CyclomaticComplexity:
+  Enabled: false
+
+AllCops:
+  Includes:
+    - Rakefile
+    - Gemfile
+    - config.ru
+  Excludes:
+    - lib/public/**
+    - build/**
+    - vendor/**

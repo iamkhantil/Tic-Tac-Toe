@@ -1,0 +1,26 @@
+.row
+  .large-12.columns.text-center
+    h1.subheader #{settings.title}
+    h4.subheader You won't beat me. But you can try.
+.row
+  .large-6.small-9.small-centered.large-centered.columns.text-center
+    ul.small-block-grid-3.board
+      - for space in %w[top-left top-center top-right middle-left middle-center middle-right bottom-left bottom-center bottom-right] do
+        li
+          .space-wrapper-1
+            .space-wrapper-2
+              .space-wrapper-3
+                .space class="#{space}"
+                  i.fa id="#{space}"
+.row
+  .small-4.columns.text-center
+    a.computer id="start-computer"
+      i class="fa fa-laptop fa-5x"
+      p You Start
+  .small-4.columns.text-center
+    h3.subheader.prompt id="prompt" Who starts?
+  .small-4.columns.text-center
+    a.human id="start-human"
+      i class="fa fa-user fa-5x"
+      p I'll Start
+
